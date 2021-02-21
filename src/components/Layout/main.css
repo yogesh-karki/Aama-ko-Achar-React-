@@ -1,0 +1,554 @@
+header.active {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  background: #fff;
+  position: fixed;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+header.active .nav-link {
+  color: #212529 !important;
+}
+
+header {
+  position: absolute;
+  top: -10px;
+  z-index: 9;
+  width: 100%;
+  background: transparent;
+}
+
+header .navbar {
+  padding: 0;
+}
+
+header .navbar a.navbar-brand {
+  padding: 0;
+}
+
+header .navbar .logo {
+  width: 110px;
+}
+
+header .navbar .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  color: #fff;
+  padding-left: 30px;
+  padding-right: 0 !important;
+}
+
+.banner {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.banner video {
+  width: 100%;
+}
+
+.banner .banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.banner .banner-text h1 {
+  text-transform: uppercase;
+}
+
+.intro .intro-text {
+  text-align: center;
+}
+
+.intro .intro-text h4 {
+  margin-bottom: 20px;
+}
+
+.intro .intro-img img {
+  width: 48vw;
+}
+
+.sec-head {
+  text-align: center;
+}
+
+.sec-head h5 {
+  text-transform: uppercase;
+}
+
+section.aval-at.av-mainpage {
+  background-color: transparent;
+}
+
+.aval-at {
+  background-color: #f5f5f5;
+  padding: 80px 0 20px;
+}
+
+.aval-at .avl-list {
+  padding-top: 30px;
+}
+
+.aval-at .avl-list .aval-sing {
+  text-align: center;
+  border-top: 1px solid #d6d6d6;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.aval-at .avl-list .aval-sing:hover {
+  cursor: pointer;
+  border-top: 1px solid #e58c23;
+}
+
+.aval-at .avl-list .aval-sing:hover .aval-link a {
+  opacity: 1;
+  visibility: visible;
+}
+
+.aval-at .avl-list .aval-sing:hover img {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.aval-at .avl-list .aval-sing h6.market-place {
+  color: #212529;
+  font-family: 'GothamSSm-XLight';
+  font-size: 14px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+.aval-at .avl-list .aval-sing img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.aval-at .avl-list .aval-sing .aval-link a {
+  color: #e58c23;
+  margin: 0 15px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.video .row {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.video .vd-bg {
+  width: 48vw;
+  height: 70vh;
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative;
+}
+
+.video .vd-bg .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.video .vd-bg .play-btn img {
+  width: 70px;
+  height: 70px;
+  background: #e58c23;
+  padding: 15px 10px 15px 15px;
+  border-radius: 50%;
+}
+
+.video .vd-text {
+  width: 60%;
+  padding-left: 50px;
+}
+
+.video .vd-text h4 {
+  margin-bottom: 20px;
+}
+
+.video .vd-text p {
+  margin-bottom: 0;
+}
+
+.products .prd-slide {
+  padding: 20px 0;
+  margin-top: 30px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.products .prd-slide .prdts-more {
+  text-align: center;
+}
+
+.sp-wrap {
+  padding: 0 15px;
+  position: relative;
+}
+
+.sp-wrap img {
+  width: 100%;
+}
+
+.sp-wrap h6 a {
+  font-size: 18px;
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  font-family: 'GothamBook';
+  color: #333;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sp-wrap h6 a:hover {
+  color: #e58c23;
+}
+
+.sp-wrap h6 a:hover::after {
+  width: 50px;
+}
+
+.sp-wrap h6 a::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  background: #e58c23;
+  height: 1px;
+  left: 110%;
+  bottom: 8px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+section.testimonial .te-slides {
+  padding: 20px 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+section.testimonial .test-wrap {
+  text-align: center;
+  margin: 15px 0;
+  padding: 20px 50px;
+}
+
+section.testimonial .test-wrap img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.testimonial .test-wrap h5 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+section.testimonial .test-wrap h6 {
+  font-size: 14px;
+  font-family: 'GothamSSm-XLight';
+  margin-bottom: 5px;
+}
+
+section.sperate {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+section.sperate .sep-sing {
+  text-align: center;
+}
+
+section.sperate .sep-sing img {
+  width: 130px;
+}
+
+section.sperate .sep-sing h5 {
+  margin-bottom: 0;
+  font-family: "GothamBook";
+  margin-top: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+section.sperate .sep-sing h5 span {
+  display: block;
+}
+
+footer {
+  background: #f5f5f5;
+  margin-top: 60px;
+  padding: 80px 0;
+}
+
+footer .cpyrt p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #333;
+}
+
+footer .cpyrt p a {
+  color: #212529;
+  font-family: 'GothamSSm-XLight';
+}
+
+footer .footer-contact {
+  text-align: right;
+}
+
+footer .footer-contact a {
+  color: #212529;
+  text-decoration: underline;
+  display: block;
+}
+
+footer .footer-contact a.num {
+  text-decoration: none;
+}
+
+footer .footer-link ul.footer-nav {
+  padding: 0;
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-bottom: 1px solid #d6d6d6;
+  padding-bottom: 20px;
+}
+
+footer .footer-link ul.footer-nav li a {
+  color: #212529;
+  text-transform: uppercase;
+  padding-right: 40px;
+}
+
+footer .social {
+  text-align: right;
+  margin-top: 20px;
+}
+
+footer .social a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #212529;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #212529;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+footer .social a i {
+  font-size: 18px;
+}
+
+.inner-banner {
+  padding: 0;
+  margin: 0;
+}
+
+.inner-banner .ib-wrap {
+  height: 550px;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+}
+
+.inner-banner .ib-wrap h4 {
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-transform: uppercase;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.inner-banner .overlay.ib-overlay {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(55%, rgba(255, 255, 255, 0)), to(rgba(45, 45, 45, 0.661502)));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 55%, rgba(45, 45, 45, 0.661502) 100%);
+}
+
+.in-title {
+  text-align: center;
+}
+
+.in-title h2 {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.in-title h6 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #e58c23;
+  text-transform: uppercase;
+}
+
+.in-title .text-half {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
+.in-title .text-half .hal-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 80px;
+}
+
+.about section.sperate {
+  padding-top: 40px;
+  margin-top: 40px;
+}
+
+.abt-text {
+  padding-right: 50px;
+}
+
+.abt-text h4 {
+  margin-bottom: 30px;
+}
+
+.abt-text p {
+  margin-bottom: 0;
+}
+
+.abt-text.pad-right {
+  padding-right: 0;
+  padding-left: 50px;
+}
+
+section.products-list {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+section.products-list .sp-wrap {
+  padding: 0;
+  margin: 15px 0;
+}
+
+section.products-list .sp-wrap h6 {
+  margin-bottom: 0;
+}
+
+section.products-list .sp-wrap h6 a {
+  left: 20px;
+}
+
+.co-wrap h5 {
+  font-size: 16px;
+  color: #e58c23;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.co-wrap a.mail-underline {
+  text-decoration: underline;
+}
+
+.co-wrap p, .co-wrap a {
+  margin-bottom: 0;
+  color: #212529;
+  font-family: 'GothamBook';
+  line-height: 1;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.formap {
+  padding: 40px 0;
+}
+
+.formap a {
+  text-transform: uppercase;
+  color: #212529;
+  display: block;
+}
+
+.formap a i {
+  margin-left: 4px;
+}
+
+.co-form {
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.co-form form {
+  text-align: center;
+  padding-top: 20px;
+  width: 60%;
+  margin: auto;
+}
+
+.co-form form input, .co-form form textarea {
+  width: 100%;
+  padding: 15px;
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid #939496;
+}
+
+.co-form form ::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.co-form form :-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.co-form form ::-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.co-form form ::placeholder {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.co-form form textarea {
+  height: 200px;
+}
+/*# sourceMappingURL=main.css.map */

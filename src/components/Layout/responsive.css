@@ -60,6 +60,36 @@
 		width: 100%;
 	}
 	
+	.navbar-collapse.collapse.show {
+		background: #fff;
+		color: #333;
+		height: 100vh;
+		position: fixed;
+		width: 100%;
+		top: 80px;
+	}
+
+	.navbar-collapse.collapse.show ul.navbar-nav {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+	}
+	
+
+	.navbar-collapse.collapse.show .nav-item .nav-link {
+		color: #333;
+		padding-left: 0;
+	}
+
+	header .navbar {
+		background: #fff;
+	}
+
+	section.banner {
+		margin-top: 80px;
+	}
 
 }
 

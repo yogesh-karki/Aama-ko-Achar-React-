@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '../../Layout/Button';
 import Available from './Available';
 import VideoModal from './VideoModal';
@@ -15,8 +15,6 @@ import Pdata from './Pdata';
 
 const Home = () => {
 
-
-        
         var settings = {
             infinite: true,
             slidesToShow: 4,
@@ -96,6 +94,7 @@ const Home = () => {
 
     return (
         <>
+
             <section className="banner">
                 <div className="overlay banner-overlay" style={{background:'url(/images/grid.png)'}}></div>
                 <video autoPlay muted loop id="myVideo" >
@@ -154,7 +153,11 @@ const Home = () => {
                                         
                                         <Product key={index}
                                             img={val.img}
-                                            name={val.title}
+                                        name={val.title}
+                                        subtitle={val.subtitle}
+                                        description={val.description}
+                                        shopDaraz={val.shop.daraz}
+                                        shopShopkey={val.shop.shopkey}
                                         />
                                 
                                     );

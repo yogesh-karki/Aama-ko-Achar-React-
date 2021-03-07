@@ -13,7 +13,16 @@ export const Navbar = () => {
         else {
             setNavbar(false);
         }
+    };
+
+    function handleCollapse() {
+        const navCol = document.querySelector('.navbar-collapse');
+        navCol.classList.remove('show');
     }
+
+
+
+
 
     window.addEventListener('scroll', changeBackground)
 
@@ -28,24 +37,24 @@ export const Navbar = () => {
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto">
-                            <li className="nav-item active">
+                            <li className="nav-item active" onClick={ () => handleCollapse()} >
                                 <Link  className="nav-link" to='/' > Home </Link>
                                
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item" onClick={ () => handleCollapse()}>
                                 <Link  className="nav-link" to='/about-us' > About Us</Link>
                                 
                             </li>
 
-                            <li className="nav-item">
+                            <li className="nav-item" onClick={ () => handleCollapse()}>
                             <Link  className="nav-link" to='/our-products' > Our Products </Link>
                             </li>
 
-                            <li className="nav-item">
+                            <li className="nav-item" onClick={ () => handleCollapse()}>
                                 <Link  className="nav-link" to='/contacts' > Contact Us </Link>
                             </li>
 
-                            <li className="nav-item">
+                            <li className="nav-item" onClick={ () => handleCollapse()}>
                                 <Link  className="nav-link" to='/shop' > Shop </Link>
                             </li>
 

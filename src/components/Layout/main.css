@@ -160,6 +160,11 @@ section.aval-at.av-mainpage {
   position: relative;
 }
 
+.video .vd-bg video.vd-mdl {
+  width: 100%;
+  height: 100%;
+}
+
 .video .vd-bg .play-btn {
   position: absolute;
   top: 50%;
@@ -209,6 +214,8 @@ section.aval-at.av-mainpage {
 
 .sp-wrap img {
   width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sp-wrap h6 a {
@@ -223,7 +230,8 @@ section.aval-at.av-mainpage {
 }
 
 .sp-wrap h6 a:hover {
-  color: #e58c23;
+  color: #e58c23 !important;
+  cursor: pointer;
 }
 
 .sp-wrap h6 a:hover::after {
@@ -550,5 +558,52 @@ section.products-list .sp-wrap h6 a {
 
 .co-form form textarea {
   height: 200px;
+}
+
+.prd-img img {
+  width: 100%;
+}
+
+.prd-det {
+  padding-left: 40px;
+}
+
+.prd-det h6 {
+  margin: 10px 0;
+  font-family: "GothamBook";
+}
+
+.prd-det .av-shop img {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 5px;
+}
+
+.av-shop {
+  margin-top: 40px;
+}
+
+.av-shop h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.av-shop a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #e58c23;
+  border: 1px solid #e58c23;
+  border-radius: 30px;
+  padding: 5px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.av-shop a:hover {
+  background: #e58c23;
+  color: #fff;
 }
 /*# sourceMappingURL=main.css.map */

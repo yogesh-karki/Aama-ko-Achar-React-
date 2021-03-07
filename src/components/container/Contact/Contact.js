@@ -1,17 +1,28 @@
 import React from 'react';
 import InnerBanner from '../../Layout/InnerBanner';
-import { useForm } from "react-hook-form";
-
-
-
- 
+import emailjs from 'emailjs-com'; 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
-    const { register, handleSubmit, errors } = useForm({
 
-    });
-    const onSubmit = data => console.log(data);
+
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        emailjs.sendForm('aama_ko_achar', 'aama_ko_achar', e.target, 'user_9mX9kOSboxC2QLYgFSp3U')
+        
+        .then((result) => {
+            toast.success("Mail successfully sent!");
+        }, (error) => {
+            console.log(error.text);
+        });
+
+        e.target.reset();
+
+
+      }
 
 
     return (
@@ -33,9 +44,9 @@ const Contact = () => {
                         <div className="col-md-4">
                             <div className="co-wrap">
                                 <h5>Get in touch</h5>
-                                <a href="" className="mail-underline">info@aamakoachar.com.np</a>
-                                <a href="" > 01-4424136</a>
-                                <a href="" > 9851182371</a>
+                                <a href="mailto:info@aamakoachar.com.np" className="mail-underline">info@aamakoachar.com.np</a>
+                                <a href="tel:+01-4424136" > 01-4424136</a>
+                                <a href="tel:+9851182371" > 9851182371</a>
                                 
                             </div>
                         </div>
@@ -47,44 +58,51 @@ const Contact = () => {
 
 
                     <div className="co-form">
+                        <ToastContainer />
                         <div className="in-title">
                             <h6>LEAVE A MESSAGE</h6>
                             <h2>Need additional information? Have a question or comment?</h2>
 
                         </div>
 
-                        <form onSubmit={handleSubmit(onSubmit)}>
+                        <form onSubmit={sendEmail}>
                             <input
-                                 
+
                                 type="text" 
                                 placeholder="Full Name" 
                                 name="name" 
-                                ref={register({ required: true })} 
                                 required
+                               
 
                             />
                           
                             <input 
+
                                 type="email" 
                                 placeholder="Email Address" 
                                 name="email" 
-                                ref={register({ required: true })} 
-
+                                required
+                               
                             />
 
                             <input 
+                              
+                                 
                                 type="number" 
                                 placeholder="Phone Number" 
                                 name="phone" 
-                                ref={register({ required: true })} 
                                 required
+                               
                             />
 
                             <textarea 
+
                                 placeholder="Type your message here" 
-                                name="message" 
-                                ref={register({ required: true })} >
+                                name="message"
                                 required
+
+                            >
+                                
                             </textarea>
 
                             <div className="line-btn">
@@ -95,6 +113,9 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+
+
+
         </div>
     )
 }

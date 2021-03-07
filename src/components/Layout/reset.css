@@ -64,15 +64,22 @@ section {
     text-transform: uppercase;
 }
 
-.line-btn a , .line-btn button {
+.line-btn a , .line-btn button, .line-btn input {
     color: #212529;
     display: inline-block;
     position: relative;
     padding-top: 138px;
     transition: 0.8s;
 }
+.line-btn > input {
+    background: transparent;
+    border: 0 !important;
+    color: #212529;
+    display: inline-block;
+}
 
-.line-btn a:before , .line-btn button:before {
+
+.line-btn a:before , .line-btn button:before, .line-btn input:before {
     position: absolute;
     content: '';
     width: 1px;
@@ -84,7 +91,7 @@ section {
     transition: 0.8s;
 }
 
-.line-btn a:after ,.line-btn button:after {
+.line-btn a:after ,.line-btn button:after,.line-btn input:after {
     position: absolute;
     content: '';
     width: 0;
@@ -95,12 +102,12 @@ section {
     transition: 0.7s;
 }
 
-.line-btn a:hover::before, .line-btn button:hover::before {
+.line-btn a:hover::before, .line-btn button:hover::before,.line-btn input:hover::before {
     height: 0;
     visibility: hidden;
 }
 
-.line-btn a:hover::after, .line-btn button:hover::after {
+.line-btn a:hover::after, .line-btn button:hover::after,.line-btn input:hover::after {
     width: 90%;
 }
 
@@ -150,6 +157,11 @@ section.testimonial .slick-slide.slick-active.slick-current::after {
     right: 0;
     transform: translateY(-50%);
 }
+
+.sp-wrap:hover img {
+    transform: scale(0.95);
+}
+
 
 @-webkit-keyframes ripple {
     0% {

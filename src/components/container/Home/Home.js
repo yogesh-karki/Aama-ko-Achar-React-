@@ -119,7 +119,7 @@ const Home = () => {
                                 pickle making and produces varieties of purely homemade pickles. Her pickles come with one goal, to bring to the marketplace a 
                                 home made product filled with the finest fresh ingredients.</p>
 
-                                <Button buttonText='Our Story' />
+                                <Button buttonText='Our Story'  buttonLink='/about-us' />
                             </div>
                         </div>
 
@@ -148,26 +148,23 @@ const Home = () => {
                     <div className="container-fluid">
                         <Slider {...settings}>
 
-                        {
-                            Pdata.map( (val) => {
-                                return(
-                                    
-                                    <Product
-                                        img={val.img}
-                                        name={val.title}
-                                    />
-                            
-                                );
-                            } )
-                        }
+                            {
+                                Pdata.map( (val,index) => {
+                                    return(
+                                        
+                                        <Product key={index}
+                                            img={val.img}
+                                            name={val.title}
+                                        />
+                                
+                                    );
+                                } )
+                            }
 
-                     
-
-                            
                         </Slider>
 
                         <div className="prdts-more">
-                            <Button buttonText='Discover More' />
+                            <Button buttonText='Discover More' buttonLink='/our-products' />
                         </div>
 
                     </div>
@@ -187,9 +184,10 @@ const Home = () => {
                       
 
                             {
-                                Avdata.map( (val) => {
+                                Avdata.slice(0,9).map( (val, index) => {
                                     return(
-                                        <Available
+                                        <Available 
+                                        key={index}
                                             location={val.location}
                                             src={val.img}
                                         />
@@ -280,3 +278,5 @@ const Home = () => {
 }
 
 export default Home;
+
+

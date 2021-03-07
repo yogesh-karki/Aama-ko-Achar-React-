@@ -179,6 +179,11 @@ section.aval-at.av-mainpage {
         background-position: center !important;
         background-size: cover !important;
         position: relative;
+
+        video.vd-mdl {
+            width:100%;
+            height:100%;
+        }
     
         .play-btn {
             position: absolute;
@@ -233,6 +238,7 @@ section.aval-at.av-mainpage {
 
     img {
         width: 100%;
+        transition: 0.5s;
     }
 
     h6 {
@@ -246,7 +252,8 @@ section.aval-at.av-mainpage {
             transition: 0.3s;
 
             &:hover {
-                color: #e58c23;
+                color: #e58c23 !important;
+                cursor: pointer;
             }
 
             &:hover::after {
@@ -573,4 +580,54 @@ section.products-list {
             height:200px
         }
     }
+}
+
+.prd-img img {
+    width: 100%;
+}
+
+.prd-det {
+    padding-left: 40px;
+
+    h6 {
+        margin: 10px 0;
+        font-family: "GothamBook";
+    }
+
+    .av-shop {
+        img {
+            width: 50px;
+            height:50px;
+            object-fit:cover;
+            margin-right: 5px;
+        }
+    }
+}
+
+.av-shop {
+    margin-top: 40px;
+
+    h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+
+    a {
+        display: inline-block;
+        margin-right: 10px;
+        color: #e58c23;
+        border: 1px solid #e58c23;
+        border-radius: 30px;
+        padding: 5px 20px;
+        transition: 0.3s;
+        
+        &:hover {
+            background: #e58c23;
+            color: #fff;
+    
+        }
+    }
+
+    
 }

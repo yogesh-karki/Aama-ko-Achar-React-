@@ -4,6 +4,7 @@ import Home from '../container/Home/Home';
 import About from '../container/About/About';
 import Products from '../container/Products/Products';
 import Contact from '../container/Contact/Contact';
+import ProductDetail from '../container/Products/ProductDetail';
 import Shop from '../container/Shop/Shop';
 import { Navbar } from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
@@ -25,10 +26,12 @@ const Layout = () => {
 
             <Switch>
                 <Route path="/" exact component={Home} ></Route>
-                <Route path="/about" exact component={About} ></Route>
-                <Route path="/products" exact component={Products} ></Route>
-                <Route path="/contact" exact component={Contact} ></Route>
+                <Route path="/about-us" exact component={About} ></Route>
+                <Route path="/our-products" exact component={Products} ></Route>
+                <Route path="/contacts" exact component={Contact} ></Route>
                 <Route path="/shop" exact component={Shop} ></Route>
+                <Route path="/productdetail" exact component={ProductDetail} ></Route>
+
             </Switch>
 
             <Footer />

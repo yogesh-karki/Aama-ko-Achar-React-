@@ -23,7 +23,7 @@ export const Navbar = () => {
                 <nav className="navbar navbar-expand-lg ">
                     <Link className="navbar-brand"  to='/'> <img  className="logo" src="/images/logo.svg" alt=""/> </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,16 +33,16 @@ export const Navbar = () => {
                                
                             </li>
                             <li className="nav-item">
-                                <Link  className="nav-link" to='/about' > About Us</Link>
+                                <Link  className="nav-link" to='/about-us' > About Us</Link>
                                 
                             </li>
 
                             <li className="nav-item">
-                            <Link  className="nav-link" to='/products' > Our Products </Link>
+                            <Link  className="nav-link" to='/our-products' > Our Products </Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link  className="nav-link" to='/contact' > Contact Us </Link>
+                                <Link  className="nav-link" to='/contacts' > Contact Us </Link>
                             </li>
 
                             <li className="nav-item">

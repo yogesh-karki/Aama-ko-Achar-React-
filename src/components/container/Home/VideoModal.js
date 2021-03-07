@@ -15,7 +15,11 @@ const VideoModal = () => {
                     <div className="vd-bg" style={{background:'url(/images/ab5.jpg)'}}>
         
                         <div className="overlay vd-overlay"></div>
-                        
+
+                        {/* <video autoPlay muted loop className="vd-mdl" >
+                            <source src="images/video/Aama Ko Aachar Short Commercial compressed.mp4" type="video/mp4" />
+                        </video>
+                         */}
                         <div className="play-btn" onClick={()=> setOpen(true)}>
                             
                             <img src="/images/play.svg" alt=""/>

@@ -3,9 +3,10 @@ import InnerBanner from '../../Layout/InnerBanner';
 import Product from '../Home/Product';
 import Pdata from '../Home/Pdata';
 
+
 const Products = () => {
     return (
-        <div>
+        <React.Fragment>
             <InnerBanner bannerText="Our Products" />
 
             <section className="about-sec">
@@ -21,12 +22,16 @@ const Products = () => {
                 <div className="container">
                     <div className="row">
                     {
-                        Pdata.map( (val) => {
+                        Pdata.map( (val,index) => {
                             return(
                                 <div className="col-md-4">
-                                    <Product
+                                    <Product key={index}
                                         img={val.img}
                                         name={val.title}
+                                        subtitle={val.subtitle}
+                                        description={val.description}
+                                        shopDaraz={val.shop.daraz}
+                                        shopShopkey={val.shop.shopkey}
                                     />
                                 </div>
                             );
@@ -37,7 +42,10 @@ const Products = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        
+            
+
+        </React.Fragment>
     )
 }
 
